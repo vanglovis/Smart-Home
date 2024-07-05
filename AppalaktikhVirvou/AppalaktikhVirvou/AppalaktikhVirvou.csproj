@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0D5959FC-D522-4ED6-8950-EDFD4CD6FCDF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AppalaktikhVirvou</RootNamespace>
+    <AssemblyName>AppalaktikhVirvou</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bathroom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bathroom.Designer.cs">
+      <DependentUpon>Bathroom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bedroom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bedroom.Designer.cs">
+      <DependentUpon>Bedroom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Coffee_Burger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Coffee_Burger.Designer.cs">
+      <DependentUpon>Coffee_Burger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FoodMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FoodMenu.Designer.cs">
+      <DependentUpon>FoodMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FoodPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FoodPayment.Designer.cs">
+      <DependentUpon>FoodPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gerodia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gerodia.Designer.cs">
+      <DependentUpon>Gerodia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kitchen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kitchen.Designer.cs">
+      <DependentUpon>Kitchen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Livingroom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Livingroom.Designer.cs">
+      <DependentUpon>Livingroom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlanPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlanPrint.Designer.cs">
+      <DependentUpon>PlanPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SmartMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SmartMenu.Designer.cs">
+      <DependentUpon>SmartMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SmartPlanner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SmartPlanner.Designer.cs">
+      <DependentUpon>SmartPlanner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Thermometer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Thermometer.Designer.cs">
+      <DependentUpon>Thermometer.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Bathroom.resx">
+      <DependentUpon>Bathroom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bedroom.resx">
+      <DependentUpon>Bedroom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Coffee_Burger.resx">
+      <DependentUpon>Coffee_Burger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FoodMenu.resx">
+      <DependentUpon>FoodMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FoodPayment.resx">
+      <DependentUpon>FoodPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gerodia.resx">
+      <DependentUpon>Gerodia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kitchen.resx">
+      <DependentUpon>Kitchen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Livingroom.resx">
+      <DependentUpon>Livingroom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlanPrint.resx">
+      <DependentUpon>PlanPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SmartMenu.resx">
+      <DependentUpon>SmartMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SmartPlanner.resx">
+      <DependentUpon>SmartPlanner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Thermometer.resx">
+      <DependentUpon>Thermometer.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
